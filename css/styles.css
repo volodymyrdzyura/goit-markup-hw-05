@@ -465,13 +465,14 @@ ul.projects {
   margin-left: 70px;
 }
 
-.social-link,
-.social-link-gray {
+.social-link {
   display: flex;
 }
 
 .social-link-gray {
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .social h3 {
@@ -497,36 +498,36 @@ ul.projects {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 .button-social:hover,
 .button-social:focus,
-.button-social-gray:hover {
+{
   background-color: var(--hover-text-color);
 }
 
 .button-social-gray {
+  display: flex;
   padding: 0px;
   width: 44px;
   height: 44px;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   border: none;
-  margin-right: 0px;
-  background-color: var(--absolut-white-header);
+  }
+
+.button-social-gray:hover  {
+  color: var(--absolut-white-header);
+  background-color: var(--hover-text-color);
+}
+.svg-gray {
+  fill: currentColor;
 }
 
-.button-social-gray .svg-gray {
-  fill: red;
-}
-
-.button-social-gray:hover .svg-gray {
-  fill: var(--absolut-white-header);
-}
-
-.linkedin .button-social {
-  margin-right: 0px;
-}
 .icon {
   margin-right: 10px;
-}
+  }
+
 .icon:last-child {
   margin-right: 0px;
 }
