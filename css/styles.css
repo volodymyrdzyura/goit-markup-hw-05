@@ -465,11 +465,8 @@ ul.projects {
   margin-left: 70px;
 }
 
-.social-link {
-  display: flex;
-}
 
-.social-link-gray {
+.social-link, .social-link-gray {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -505,7 +502,13 @@ ul.projects {
   background-color: var(--hover-text-color);
 }
 
-.button-social-gray {
+.button-social-gray:hover,
+.button-social:hover {
+  color: var(--absolut-white-header);
+  background-color: var(--hover-text-color);
+}
+
+.button-social-gray, .button-social {
   display: flex;
   padding: 0px;
   width: 44px;
@@ -516,19 +519,16 @@ ul.projects {
   border: none;
   }
 
-.button-social-gray:hover  {
-  color: var(--absolut-white-header);
-  background-color: var(--hover-text-color);
-}
+
 .svg-gray {
   fill: currentColor;
 }
 
-.icon {
+.icon-gray, .icon {
   margin-right: 10px;
   }
 
-.icon:last-child {
+.icon-gray:last-child, .icon:last-child {
   margin-right: 0px;
 }
 
