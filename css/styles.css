@@ -47,6 +47,7 @@ li {
 .contact-data {
   display: flex;
   margin-left: 305px;
+  align-items: center;
 }
 
 .navigation-head {
@@ -108,6 +109,7 @@ li {
   min-width: 200px;
   min-height: 50px;
   padding: 10px 32px;
+  border: none;
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
@@ -238,24 +240,19 @@ p {
 
 .mail-tel {
   display: flex;
-}
-
-
-.mail-tel:hover .icon-mail,
-.mail-tel:hover .icon-tel,
-.mail-tel:hover .site-contacts
-{
-  color: var(--hover-text-color);
-  fill: var(--hover-text-color);
-}
+  }
 
 .icon-mail,
 .icon-tel {
   fill: #757575;
-}
-
-.data {
-  margin-right: 10px;
+  padding-right: 10px;
+ }
+.site-contacts:hover .icon-mail,
+.site-contacts:hover .icon-tel,
+.site-contacts:focus .icon-mail,
+.site-contacts:focus .icon-tel
+ {
+  fill:var(--hover-text-color)
 }
 
 .car-list {
@@ -281,18 +278,19 @@ p {
   width: 70px;
   height: 70px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 25px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .four {
+  display: flex;
   width: 270px;
   height: 120px;
   background-color: var(--team-button-color);
   margin-bottom: 30px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 .car-list {
@@ -385,8 +383,9 @@ p {
 }
 
 .card-project:hover {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -429,7 +428,9 @@ footer {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
 }
+
 .filters {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -501,18 +502,7 @@ ul.projects {
   padding-top: 12px;
 }
 .button-social {
-  padding: 0px;
-  border: none;
-  margin-right: 10px;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.button-social:hover,
-.button-social:focus {
-  background-color: var(--hover-text-color);
 }
 
 .button-social-gray:hover,
@@ -521,6 +511,11 @@ ul.projects {
 .button-social:focus {
   color: var(--absolut-white-header);
   background-color: var(--hover-text-color);
+  fill: var(--absolut-white-header);
+}
+
+.button-social-gray:focus .svg-gray {
+fill: var(--absolut-white-header)
 }
 
 .button-social-gray,
@@ -569,8 +564,18 @@ ul.projects {
 }
 
 .button-part:hover,
-.partners-button:hover {
+.partners-button:hover
+ {
   fill: #03a9f4;
+  border-color: var(--hover-text-color);
+}
+
+.partners-button:focus .button-part
+ {
+  fill: #03a9f4;
+ }
+
+.partners-button:focus {
   border-color: var(--hover-text-color);
 }
 
@@ -603,11 +608,6 @@ ul.projects {
 
 .partners-list:last-child {
   margin-right: 0px;
-}
-
-.partners button:hover {
-  background-color: var(--absolut-white-header);
-  border-color: var(--hover-text-color);
 }
 
 .partners .container h2 {
