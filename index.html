@@ -66,9 +66,9 @@
             Эфективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button-m">Заказать услугу</button>
+          <button data-modal-open type="button" class="button-m">Заказать услугу</button>
         </div>
-      </section>
+        </section>
       <!--Наші переваги-->
       <section class="section-benefits">
         <div class="container">
@@ -317,9 +317,9 @@
                   </li>
                   <li class="icon-gray">
                   <a href class="button-social-gray">
-                     <svg class="svg-gray" width="20px" height="20px">
-                       <use href="./images/symbol-defs.svg#icon-facebook-grey"></use>
-                     </svg>
+                    <svg class="svg-gray" width="20px" height="20px">
+                      <use href="./images/symbol-defs.svg#icon-facebook-grey"></use>
+                    </svg>
                     </a>
                   </li>
                   <li class="icon-gray">
@@ -456,5 +456,13 @@
           </div>
         </section>  
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="round-button">
+          <img class="cross" src="./images/blackcross.svg" alt="close button">
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
