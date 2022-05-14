@@ -44,7 +44,6 @@ li {
   position: relative;
   display: block;
   padding: 32px 0px;
-    
 }
 
 .link-current::after {
@@ -305,18 +304,22 @@ p {
 }
 
 .icon-mail,
-.icon-tel {
+.icon-tel
+ {
   fill: #757575;
   padding-right: 10px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .site-contacts:hover .icon-mail,
 .site-contacts:hover .icon-tel,
 .site-contacts:focus .icon-mail,
 .site-contacts:focus .icon-tel {
-  fill: var(--hover-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--hover-text-color)
+  
 }
+
+
 
 .car-list {
   width: 270px;
@@ -566,6 +569,7 @@ ul.projects {
 .button-social {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-social-gray:hover,
@@ -616,7 +620,6 @@ ul.projects {
   background-position: 50%;
   background-size: contain;
   vertical-align: middle;
-  
 }
 
 .button-part {
@@ -634,7 +637,6 @@ ul.projects {
 .partners-button:hover {
   fill: #03a9f4;
   border-color: var(--hover-text-color);
-
 }
 
 .partners-button:focus .button-part {
@@ -695,7 +697,7 @@ ul.projects {
   background-color: rgba(0, 0, 0, 0.1);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
 .backdrop.is-hidden {
   opacity: 0;
@@ -703,7 +705,7 @@ ul.projects {
 }
 
 .backdrop.is-hidden .modal {
-transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal {
@@ -714,7 +716,7 @@ transform: translate(-50%, -50%) scale(0.9);
   left: 50%;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -736,13 +738,17 @@ transform: translate(-50%, -50%) scale(0.9);
 }
 
 .cross {
-  height: 18px;
-  height: 18px;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: contain;
   vertical-align: middle;
+  fill: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/*
+.round-button:hover .cross {
+  color: var(--hover-text-color)
+}*/
 
 .images li {
   position: relative;
@@ -762,12 +768,12 @@ transform: translate(-50%, -50%) scale(0.9);
 }
 
 .image-text {
-padding-top: 27px;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--absolut-white-header);
+  padding-top: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--absolut-white-header);
 }
